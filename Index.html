@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Pizza Order</title>
+  </head>
+  <body>
+    <h1>Best Pizza Ever</h1>
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p>Love making pizza</p>
+      </section>
+      <section id="contact-form">
+        <h2>Place Order</h2>
+        <form action="place-order.php" method="post">
+          <h4>Delivery Method</h4>
+          <span>Delivery</span><input type="radio" name="Delivery" value="Delivery"> <!radio type is only 1 or the other can be selected when name is the same>
+          <span>Pickup</span><input type="radio" name="Delivery" value="pickup"><br>
+          <input type="text" name="address1" placeholder="Address Line 1" class="lg-input"><br>
+          <input type="text" name="address2" placeholder="Address Line 2" class="lg-input"> <br>
+          <input type="text" name="city" placeholder="City" class="sm-input">
+          <input type="text" name="state" placeholder="State" class="sm-input"><br>
+          <input type="text" name="postcode" placeholder="Postcode" class="sm-input"><br>
+          <input type="text" name="phone no." placeholder="Phone No." class="lg-input"><br>
+
+          <h4>Size</h4>
+          <select class="" name="Size">
+            <option value="12"><span>12" - $13.99</span></option>
+            <option value="16"><span>16" - $15.99</span></option>
+            <option value="18"><span>18" - 17.99</span></option>
+          </select>
+
+          <h4>Ingredients</h4>
+          <span>pepperoni</span> <input type="checkbox" name="pepperoni" value="pepperoni"><br> <!checkbox type can be  selected as many different options eventhough name is the same>
+          <span>ham</span> <input type="checkbox" name="Ingredient" value="ham"><br>
+          <span>cheese</span> <input type="checkbox" name="Ingredient" value="cheese"><br>
+          <span>peppers</span> <input type="checkbox" name="Ingredient" value="peppers"><br>
+          <span>mushroom</span> <input type="checkbox" name="Ingredient" value="mushroom"><br> <br>
+          <button type="submit" name="button"><span>Place order</span></button>
+        </form>
+      </section>
+
+      <footer> &copy; 2020</footer>
+      <a href="#">Terms of Service</a>
+    </main>
+  </body>
+</html>
